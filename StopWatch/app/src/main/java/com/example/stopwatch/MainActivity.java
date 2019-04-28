@@ -28,7 +28,6 @@ public class MainActivity extends Activity {
             wasRunning = savedInstanceState.getBoolean("wasRunning");
         }
         runTimer();
-
     }
 
     @Override
@@ -48,7 +47,6 @@ public class MainActivity extends Activity {
 
     public void onClickStart(View view) {
         running = true;
-
     }
 
     public void onClickStop(View view) {
@@ -88,7 +86,6 @@ public class MainActivity extends Activity {
                 handler.postDelayed(this, 1000);
             }
         });
-
     }
 
     @Override
