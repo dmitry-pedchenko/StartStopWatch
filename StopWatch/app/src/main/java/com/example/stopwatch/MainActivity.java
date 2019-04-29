@@ -89,10 +89,19 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    protected void onResume() {
+    protected void onPause() {
+        super.onPause();
+        wasRunning = running;
+        running = false;
+    }
+
+    @Override
+    protected void onResume()
+    {
         super.onResume();
-        final TextView t = (TextView) findViewById(R.id.test);
-        t.setText("YES!!!");
+        if (wasRunning) {
+            running = true;
+        }
     }
 
     @Override
