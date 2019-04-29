@@ -112,3 +112,6 @@ public class MainActivity extends Activity {
 
     }
 }
+
+// A, G, D,       H, A, G, D, B, E,    G, D
+// A, G, D, B, E, H, A, G, D, B, E, C, G, D
